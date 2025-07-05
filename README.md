@@ -42,7 +42,7 @@ The app is built using Python, trained on real-world bug data, and deployed usin
 ##  Try it Online
 
 Try the live app here:  
-> [https://bug-classifier.streamlit.app](https://bug-classifier.streamlit.app) *(replace with your link)*
+> in progress
 
 ---
 
