@@ -7,6 +7,10 @@ import spacy
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
+import spacy.cli
+
+spacy.cli.download("en_core_web_sm")
+
 
 # Download NLTK stuff only if not done
 nltk.download('punkt')
