@@ -60,4 +60,7 @@ Try the live app here:
 Found a bug in the bug classifier?  
 Raise an issue or message me — happy to improve it!
 
+>jkartikey.official@gmail.com
+>https://www.linkedin.com/in/jhugan-kartikey-068a60315/
+
 
