@@ -42,6 +42,26 @@ st.title("🛠️ Bug Severity Predictor")
 
 bug_text = st.text_area("Paste your bug report here:")
 
+st.markdown("---")
+st.subheader("📁 Upload a CSV File of Bug Reports")
+
+uploaded_file = st.file_uploader("Upload CSV file with a 'bug_description' column", type="csv")
+
+if uploaded_file is not None:
+    import pandas as pd
+    df = pd.read_csv(uploaded_file)
+
+    if 'bug_description' not in df.columns:
+        st.error("❌ CSV must contain a 'bug_description' column.")
+    else:
+        df['cleaned'] = df['bug_description'].apply(clean_text)
+        vecs = vectorizer.transform(df['cleaned'])
+        df['Predicted Severity'] = model.predict(vecs)
+
+        st.success("✅ Predictions complete!")
+        st.write(df[['bug_description', 'Predicted Severity']])
+
+
 if st.button("Predict Severity"):
     if bug_text.strip() == "":
         st.warning("Please enter some bug text.")
