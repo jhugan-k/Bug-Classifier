@@ -1,4 +1,4 @@
-# Bug Severity Classifier 🐞
+# Bug Severity Classifier 
 
 This is a machine learning-based app that predicts the **severity of software bugs** from plain text bug reports. You can type in or paste any bug description, and the model will classify it as one of the following:
 
@@ -11,7 +11,7 @@ The app is built using Python, trained on real-world bug data, and deployed usin
 
 ---
 
-## 📌 Features
+##  Features
 
 - Classifies severity of any bug description using NLP + ML
 - Clean text processing with lemmatization and stopword removal
@@ -21,7 +21,7 @@ The app is built using Python, trained on real-world bug data, and deployed usin
 
 ---
 
-## 🚀 How It Works
+##  How It Works
 
 - Text is cleaned and converted into numeric features using TF-IDF
 - A logistic regression model (from scikit-learn) predicts severity
@@ -29,7 +29,7 @@ The app is built using Python, trained on real-world bug data, and deployed usin
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 - Python 3.11  
 - pandas  
@@ -39,14 +39,14 @@ The app is built using Python, trained on real-world bug data, and deployed usin
 
 ---
 
-## 🧪 Try it Online
+##  Try it Online
 
 Try the live app here:  
-👉 [https://bug-classifier.streamlit.app](https://bug-classifier.streamlit.app) *(replace with your link)*
+>>> [https://bug-classifier.streamlit.app](https://bug-classifier.streamlit.app) *(replace with your link)*
 
 ---
 
-## 📌 Future Plans
+##  Future Plans
 
 - Add bug **category** prediction (e.g., UI Bug, Security Bug, etc.)
 - Add CSV file upload to classify bugs in bulk
@@ -55,7 +55,7 @@ Try the live app here:
 
 ---
 
-## 📮 Feedback
+##  Feedback
 
 Found a bug in the bug classifier?  
 Raise an issue or message me — happy to improve it!
